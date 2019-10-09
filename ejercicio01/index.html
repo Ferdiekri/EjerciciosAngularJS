@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<!-- Directiva para decir que es una App de Angular -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Angular JS-->
+    <script src="js/angular.min.js"></script>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>AngularJS - Eder</title>
+</head>
+
+<body>
+    <h1>{{ "Wellcome to the Hell - AngularJS" | uppercase }}</h1>
+    <div class="container">
+
+
+        <ul class="list-group">
+            <li class="list-group-item">
+
+                <h2>Filtros</h2>
+                <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">Documentación</a>
+        
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge badge-info">uppercase</span> {{ "Wellcome To The Hell - AngularJS" | uppercase }}
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-info">lowercase</span> {{ "Wellcome To The Hell - AngularJS" | lowercase }}
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-info">number</span> {{53214.58 | number:4 }}
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-info">date</span> {{1570053600000 | date:'dd/MM/yyyy @ h:mma' }}
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-info">currency</span> {{123.456 | currency:"€" }}
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="list-group-item list-group-item-secondary">
+                <h2>Directiva ng-model</h2>
+                <p>Nombre: {{ nombre | uppercase }}</p>
+                <input type="text" ng-model="nombre" class="form-control" placeholder="Inserta tu nombre.">
+
+                <p>Fecha: {{ fecha | date:'dd/MM/yyyy @ h:mma' }}</p>
+                <input type="date" ng-model="fecha" class="form-control" placeholder="Inserta tu nombre.">
+
+                <p>Elige tu país: {{ pais }}</p>
+                <select ng-model="pais">
+                    <option value="es">España</option>
+                    <option value="eu">Euskadi</option>
+                    <option value="eeuu">Estados Unidos</option>
+                </select>
+                
+                <p>¿Qué genero musical te gusta?: M: {{ g1 }} -- S:{{ g2 }} -- B:{{ g3 }} -- C:{{ g4 }}</p>
+                <input type="checkbox" ng-model="g1"> Música <br>
+                <input type="checkbox" ng-model="g2"> Surf <br>
+                <input type="checkbox" ng-model="g3"> Bromas <br>
+                <input type="checkbox" ng-model="g4"> Caidas <br>
+
+                <p>¿Cómo te identificas? {{ sexo }}</p>
+                <input type="radio" ng-model="H"> Hombre
+                <input type="radio" ng-model="M"> Mujer
+                <input type="radio" ng-model="?"> Indefinido
+
+
+            </li>
+
+            <li class="list-group-item"></li>
+            <li class="list-group-item list-group-item-secondary"></li>
+
+        </ul>
+
+
+        
+
+       
+    </div> <!-- class="container" -->
+</body>
+
+</html>

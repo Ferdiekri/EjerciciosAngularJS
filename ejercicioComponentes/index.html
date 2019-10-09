@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="componentesApp">
+<!-- Directiva para decir que es una App de Angular -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Angular JS-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="components/boton/componente-boton.js"></script>
+    <script src="components/calificacion/componente-calificacion.js"></script>
+    <script src="js/componente-saludar.js"></script>
+    <script src="js/phone-list.component.js"></script>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Ejercicio Componentes</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Ejercicio Componentes</h1>
+        <hr>
+        <div class="row bg-dark">
+            <div class="col-6">
+                <a href="https://docs.angularjs.org/tutorial/step_03" target="_blank"
+                    class="mt-3 mb-3 btn btn-outline-info btn-block">Tutorial Oficial de <b>Components</b></a>
+            </div>
+            <div class="col-6">
+                <a href="https://docs.angularjs.org/guide/component" target="_blank"
+                    class="mt-3 mb-3 btn btn-outline-info btn-block">Documentación Oficial de <b>Components</b></a>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-4 border">
+                <h5>Nuestro primer componente.</h5>
+                <saludo-usuario></saludo-usuario>
+            </div>
+            <div class="col-4 border">
+                <h5>Nuestro segundo componente con el template para el HTML.</h5>
+                <componente-boton></componente-boton>
+            </div>
+            <div class="col-4 border">
+                <h5>Componente calificaciones.</h5>
+                <componente-calificacion></componente-calificacion>
+            </div>
+        </div> <!-- row mt-3 -->
+
+        <div class="row mt-3">
+            <div class="col-6 border">
+                <h2>Calificaciones de Pepe</h2>
+                <table class="table">
+                    <tr>
+                        <td><i class="fab fa-html5 fa-3x"></i></td>
+                        <td>
+                            <componente-calificacion pnota="5"></componente-calificacion>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-css3-alt fa-3x"></i></td>
+                        <td>
+                            <componente-calificacion pnota="8"></componente-calificacion>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-js-square fa-3x"></i></td>
+                        <td>
+                            <componente-calificacion pnota="7"></componente-calificacion>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-angular fa-3x"></i></td>
+                        <td>
+                            <componente-calificacion pnota="3"></componente-calificacion>
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- class="col-2" -->
+            <div class="col-6 border" ng-controller="notasController" >
+                <h2>Calificaciones de Pepe CON DATOS</h2>
+                {{notas.pepe | json}}
+                <table class="table" >
+                    <tr ng-repeat="n in notas.pepe">
+                        <td>{{n.asignatura}} - {{n.nota}}</td>
+                        <td>
+                            <componente-calificacion pnota={{n.nota}}></componente-calificacion>
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- class="col-2" -->
+        </div>
+
+        <hr>
+
+        <h2>Listado teléfonos.</h2>
+
+        <phone-list></phone-list>
+
+    </main>
+
+</body>
+
+</html>

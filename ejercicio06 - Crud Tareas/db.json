@@ -1,0 +1,66 @@
+{
+  "tareas": [
+    {
+      "id": 3,
+      "completada": false,
+      "descripcion": "Poner bonitaaaaaaaaaaaaaaaa imagen de fondo con css"
+    },
+    {
+      "id": 4,
+      "completada": false,
+      "descripcion": "Poner focus al input despues de pulsar boton"
+    },
+    {
+      "completada": false,
+      "descripcion": "Mirar como no recargar la pagina",
+      "id": 10
+    },
+    {
+      "completada": true,
+      "descripcion": "icono para eliminar",
+      "id": 11
+    },
+    {
+      "completada": true,
+      "descripcion": "checkbutton al lado de la tarea para marcar si esta o no terminada",
+      "id": 12
+    },
+    {
+      "completada": true,
+      "descripcion": "filtrar tareas por nombre",
+      "id": 13
+    },
+    {
+      "completada": true,
+      "descripcion": "Confirmar la eliminación.",
+      "id": 14
+    },
+    {
+      "completada": true,
+      "descripcion": "Cancelar la edición de la tarea.",
+      "id": 15
+    },
+    {
+      "completada": false,
+      "descripcion": "Poner todo bonito.",
+      "id": 18
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

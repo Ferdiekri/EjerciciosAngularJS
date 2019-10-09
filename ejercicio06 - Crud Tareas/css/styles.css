@@ -1,0 +1,67 @@
+body{
+    background-color: #B6F2E8;
+}
+
+.libreta{
+    background-image: url("../img/libreta.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width:100%;
+}
+
+.tachado{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.fa-trash-alt, .fa-pencil-alt, .fa-check-square{
+    color: grey;
+    /*float: right;*/
+}
+
+.fa-check-square{
+    margin-right: 2em;
+}
+
+.fa-pencil-alt{
+    margin-right: 2em;
+}
+
+.fa-check-square:hover{
+    color: blue;
+}
+
+.fa-trash-alt:hover{
+    color: red;
+}
+
+.fa-pencil-alt:hover{
+    color: teal;
+}
+
+.fas:hover{
+    font-size:1.25em;
+    cursor: pointer;
+}
+
+.no-editable{
+    border: none;
+}
+
+.en-linea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.probando{
+    background-color: red;
+    background-image: url("../img/libreta.png");
+    padding: 1em;
+    background-size: cover;¡
+    background-repeat: no-repeat;¡
+}
