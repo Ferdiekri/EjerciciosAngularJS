@@ -1,14 +1,13 @@
-// var app = angular.module( "app", [ ] );
 app.config( function( $routeProvider ){
 
   $routeProvider
     .when('/',{
         templateUrl: 'parciales/home.html'
     })
-    .when('/componentes',{
+    .when('/componente1',{
       templateUrl: 'parciales/componentes.html'
     })
-    .when('/componentes2',{
+    .when('/componente2',{
       template: '<componente-boton></componente-boton>'
     })
     .when('/profesores',{
