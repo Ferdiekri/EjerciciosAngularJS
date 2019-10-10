@@ -7,6 +7,7 @@
         <!-- Incluir AngularJS -->
         <script src="js/lib/angular1.7.8.min.js"></script>
         <script src="js/lib/angular.route.1.7.8.min.js"></script>
+        <script src="js/lib/angular-sanitize.min.js"></script>
 
         <script src="js/app.js"></script>
         <script src="js/config.js"></script>
@@ -19,6 +20,7 @@
         <!-- Nuestros componentes -->
         <script src="components/boton/componente-boton.js"></script>
         <script src="components/menu/componente-menu.js"></script>
+        <script src="components/alert/componente-alert.js"></script>
 
         <!-- Nuestros controladores 
         <script src=""></script>-->
@@ -28,9 +30,15 @@
 
         <componente-menu> </componente-menu>
 
+        <componente-alert pclase="danger" ptexto="EDER"> </componente-alert>
+        <!--<componente-alert pclase="{{alerta.clase}}" ptexto="{{alerta.texto}}"> </componente-alert>-->
+
+
+        
+
         <div class="container">
-        <!-- La pagina principal ira aquí -->
-        <div ng-view></div>
+            <!-- La pagina principal ira aquí -->
+            <div ng-view></div>
 
         </div><!-- /.container -->
 
