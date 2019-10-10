@@ -8,21 +8,25 @@ angular.
 
             $scope.rutas = [
                 {
+                  'icono': 'fas fa-home',
                   'nombre': 'Inicio',
                   'url': '#!/',
                   'active': true
                 },
                 {
+                  'icono': 'fas fa-pepper-hot',
                   'nombre': 'Frutas',
                   'url': '#!/frutas',
                   'active': false
                 },
                 {
+                  'icono': 'fas fa-laptop-code',
                   'nombre': 'Componentes',
                   'url': '#!/componente',
                   'active': false
                 },
                 {
+                  'icono': 'far fa-credit-card',
                   'nombre': 'Creditos',
                   'url': '#!/creditos',
                   'active': false
