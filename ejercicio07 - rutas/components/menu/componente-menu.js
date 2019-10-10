@@ -13,18 +13,13 @@ angular.
                   'active': true
                 },
                 {
-                  'nombre': 'Porfesores',
-                  'url': '#!/profesores',
+                  'nombre': 'Frutas',
+                  'url': '#!/frutas',
                   'active': false
                 },
                 {
-                  'nombre': 'Componente HTML',
-                  'url': '#!/componente1',
-                  'active': false
-                },
-                {
-                  'nombre': 'Componente a pelo',
-                  'url': '#!/componente2',
+                  'nombre': 'Componentes',
+                  'url': '#!/componente',
                   'active': false
                 },
                 {
@@ -36,12 +31,13 @@ angular.
             
               $scope.cambiarActivo = function( ruta ){
                 console.trace('click cambiarActivo() %o', ruta);
+
                 $scope.rutas.forEach(element => {
                   element.active = false;
                 });
                 ruta.active = true;
             
-              };
+              }; // cambiarActivo
             
-        }
+        } // MenuController
     });
