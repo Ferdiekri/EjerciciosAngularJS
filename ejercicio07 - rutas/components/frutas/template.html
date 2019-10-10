@@ -1,4 +1,5 @@
 <!-- <componente-frutas> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
     <div class="en-linea m-2">
         <i class="fas fa-search mr-5 fa-2x"></i>
@@ -59,6 +60,18 @@
             <button ng-click="verOtrasFrutas(true)" class="mt-3 mb-3 btn btn-outline-info btn-block" ng-disabled="(deshabilitadoDer)?'disabled':''">Ver siguientes</button>
         </div>
     </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item page-link" ng-click="verOtrasFrutas(false)">Anterior</li>
+
+            <c:forEach var = "i" begin = "1" end = {{paginas}}>
+                    <li class="page-item page-link" ng-click="verOtrasFrutas(false)">i</li>                    
+            </c:forEach>
+
+            <li class="page-item page-link" ng-click="verOtrasFrutas(true)">Sigiente</li>
+        </ul>
+    </nav>
 
     Division: {{paginas}}
 
