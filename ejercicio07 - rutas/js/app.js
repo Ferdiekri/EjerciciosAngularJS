@@ -12,7 +12,7 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
         }
 
         // Para saber si el servivio REST está levantado.
-        let url = 'http://localhost:3000/profile';
+        let url = 'http://localhost:3000';
         $http.get(url)
             .then(function (result) {
                 console.trace('Servicio REST funcionando. %o', result);
@@ -23,7 +23,7 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
             }).catch(function (response) {
                 console.trace('Servicio REST fallando. %o', response);
                 $scope.alerta = {
-                    'texto': '<strong>¡Atención!</strong> Servicio REST está parado. correctamentre.',
+                    'texto': '<strong>¡Atención!</strong> Servicio REST está parado.',
                     'clase': 'danger'
                 }
             

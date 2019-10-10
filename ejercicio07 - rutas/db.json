@@ -1,49 +1,58 @@
 {
   "frutas": [
     {
-      "id": 3,
-      "completada": false,
-      "descripcion": "Poner bonitaaaaaaaaaaaaaaaa imagen de fondo con css"
+      "nombre": "Manzana",
+      "precio": 7,
+      "imagen": "manzana.png",
+      "color": "rojo"
     },
     {
-      "id": 4,
-      "completada": false,
-      "descripcion": "Poner focus al input despues de pulsar boton"
+      "nombre": "Fresa",
+      "precio": 5,
+      "imagen": "fresa.png",
+      "color": "rojo"
     },
     {
-      "completada": false,
-      "descripcion": "Mirar como no recargar la pagina",
-      "id": 10
+      "nombre": "Pera",
+      "precio": 1,
+      "imagen": "pera.png",
+      "color": "verde"
     },
     {
-      "completada": true,
-      "descripcion": "icono para eliminar",
-      "id": 11
+      "nombre": "Kiwi",
+      "precio": 2,
+      "imagen": "kiwi.png",
+      "color": "marron"
     },
     {
-      "completada": true,
-      "descripcion": "checkbutton al lado de la tarea para marcar si esta o no terminada",
-      "id": 12
+      "nombre": "Uva",
+      "precio": 6,
+      "imagen": "uva.png",
+      "color": "morado"
     },
     {
-      "completada": true,
-      "descripcion": "filtrar tareas por nombre",
-      "id": 13
+      "nombre": "Sandía",
+      "precio": 7,
+      "imagen": "sandia.png",
+      "color": "rojo"
     },
     {
-      "completada": true,
-      "descripcion": "Confirmar la eliminación.",
-      "id": 14
+      "nombre": "Naranja",
+      "precio": 3,
+      "imagen": "naranja.png",
+      "color": "naranja"
     },
     {
-      "completada": true,
-      "descripcion": "Cancelar la edición de la tarea.",
-      "id": 15
+      "nombre": "Piña",
+      "precio": 3,
+      "imagen": "pina.png",
+      "color": "amarillo"
     },
     {
-      "completada": false,
-      "descripcion": "Poner todo bonito.",
-      "id": 18
+      "nombre": "Platano",
+      "precio": 2,
+      "imagen": "platano.png",
+      "color": "amarillo"
     }
   ],
   "posts": [

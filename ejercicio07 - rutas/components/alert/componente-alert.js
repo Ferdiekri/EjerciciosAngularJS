@@ -9,7 +9,7 @@ angular.
         controller: function AlertController() {
 
             console.trace('componenteAlert');
-
+/*
             $self = this;
             $Self.alerta = {};
 
@@ -27,7 +27,7 @@ angular.
                     'texto': $self.ptexto,
                     'clase': $self.pclase
                 };
-            } //onInit
+            } //onInit*/
             
         } // AlertController
     });

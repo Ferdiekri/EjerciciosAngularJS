@@ -1,3 +1,29 @@
 /*body {
   padding-top: 50px;
 }*/
+
+.en-linea{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.foto-fruta{
+  width:50px;
+  height: 50px;
+}
+
+.orden{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.orden .botones{
+  display: flex;
+  flex-direction: column;
+
+}
