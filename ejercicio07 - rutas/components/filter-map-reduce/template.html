@@ -1,0 +1,105 @@
+<!-- componente-fmr -->
+
+<h1>Programación funcional</h1>
+
+
+<div class="row">
+    <div class="col-4">
+        <h2>Filter</h2>
+        <img ng-src="./img/filter.gif" width="100%" alt="Imagen del filtro."
+        data-toggle="modal" data-target="#modalFilter">
+    </div>
+
+    <div class="col-4">
+        <h2>Map</h2>
+        <img ng-src="./img/map.gif" width="100%" alt="Imagen del filtro."
+        data-toggle="modal" data-target="#modalMap">
+    </div>
+
+    <div class="col-4">
+        <h2>Reduce</h2>
+        <img ng-src="./img/reduce.gif" width="100%" alt="Imagen del filtro."
+        data-toggle="modal" data-target="#modalReduce">
+    </div>
+</div>
+
+<style>
+  p{
+    word-wrap: break-word;
+  }
+</style>
+
+<div class="row mt-2">
+  <div class="col-12">
+    <p>Este es el listado de todas las frutas:</p>
+    <p class="border p-2">Frutas: {{ frutas | json }}</p>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <h2>Ejemplo Filter</h2>
+        <p>El listado de frutas filtrado por la condicion <code>color: 'rojo'</code>:</p>
+        <p class="border p-2">Frutas Filter: {{ frutasFilter }}</p>
+    </div>
+
+    <div class="col-4">
+        <h2>Ejemplo Map</h2>
+        <p>El listado de frutas mapeado por la columna <code>nombre</code>:</p>
+        <p class="border p-2">Frutas Map (Nombre): {{ frutasMap }}</p>
+        <p>El listado de frutas mapeado por las columnas <code>nombre</code> y <code>color</code>:</p>
+        <p class="border p-2">Frutas Map (Nombre & Color): {{ frutasMapNombreColor }}</p>
+    </div>
+
+    <div class="col-4">
+        <h2>Ejemplo Reduce</h2>
+        <p>El listado de frutas reducido por la suma de la columna <code>precio</code>:</p>
+        <p class="border p-2">Frutas Reduce: {{ frutasReduce }}</p>
+    </div>
+</div>
+
+
+
+<!-- Modal Filter -->
+<div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <img ng-src="./img/filter.gif" width="700px;height:auto;" alt="Imagen del filtro." width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal Map -->
+<div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <img ng-src="./img/map.gif" width="700px;height:auto;" alt="Imagen del filtro." width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal Reduce -->
+<div class="modal fade" id="modalReduce" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <img ng-src="./img/reduce.gif" width="700px;height:auto;" alt="Imagen del filtro." width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    
+<!-- /componente-fmr -->

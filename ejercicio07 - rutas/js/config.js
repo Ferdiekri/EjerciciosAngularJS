@@ -20,7 +20,13 @@ app.config( function( $routeProvider ){
     })
     .when('/creditos',{
       templateUrl: 'parciales/creditos.html'
-  })
+    })
+    .when('/filtros',{
+      template: '<componente-fmr></componente-fmr>'
+    })
+    .when('/contratos',{
+      template: '<componente-contratos></componente-contratos>'
+    })
     .otherwise({
       redirectTo: '/'
     })

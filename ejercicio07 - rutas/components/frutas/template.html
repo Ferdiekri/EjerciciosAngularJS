@@ -7,7 +7,10 @@
     </div>
 
     <select ng-model="busqueda.color" class="form-control">
-
+            <option value="">Selecciona color</option>
+            <option ng-repeat="c in colores" value="{{c}}">
+                {{c}}
+            </option>
     </select>
 
     <h2>Las Frutas Paginadas</h2>
@@ -49,7 +52,7 @@
         </thead>
         <tbody>
             <tr ng-repeat="fruta in frutasPaginadas | filter:busqueda | orderBy:columna:orden">
-                <td><img class="foto-fruta" ng-src="./img/{{fruta.imagen}}" alt="Foto de una fruta llamada {{fruta.nombre}}."> </td>
+                <td><img id="myImg" class="foto-fruta" ng-src="./img/{{fruta.imagen}}" alt="Foto de una fruta llamada {{fruta.nombre}}."> </td>
                 <td>{{fruta.nombre}}</td>
                 <td>{{fruta.precio}}</td>
                 <td>{{fruta.color}}</td>
@@ -116,6 +119,10 @@
                 <td>{{fruta.color}}</td>
             </tr>
         </tbody>
+
+        
+
+
         <tfoot>
             <tr>
                 <td colspan="2">Total Precio</td>
@@ -123,5 +130,8 @@
             </tr>
         </tfoot>
     </table>
+
+
+    
 
 <!-- </componente-frutas> -->

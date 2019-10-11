@@ -28,7 +28,11 @@ angular.
                         console.trace('peticion GET %s data=%o', $scope.ENDPOINT, response);
                         $scope.frutas = response.data;
 
-                        $scope.colores = response.data.map(elem=>elem.color);
+                        //$scope.colores = response.data.map(elem=>elem.color).filter( (v,i,a) => a.indexOf(v) === i );
+                        $scope.colores = response.data.map(elem=>elem.color).filter( (v,i,a) => { 
+                            return a.indexOf(v) === i} );
+
+
                         $scope.nombre2e = response.data.filter(e => e.precio > 2).map(e=>e.nombre);
                         $scope.totalEuros = response.data.map(elem=>elem.precio).reduce( (pv,cv) => pv+cv );
 

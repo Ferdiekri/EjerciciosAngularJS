@@ -4,55 +4,64 @@
       "nombre": "Manzana",
       "precio": 7,
       "imagen": "manzana.png",
-      "color": "rojo"
+      "color": "rojo",
+      "color_code": "#ff0000"
     },
     {
       "nombre": "Fresa",
       "precio": 5,
       "imagen": "fresa.png",
-      "color": "rojo"
+      "color": "rojo",
+      "color_code": "#ff0000"
     },
     {
       "nombre": "Pera",
       "precio": 1,
       "imagen": "pera.png",
-      "color": "verde"
+      "color": "verde",
+      "color_code": "#00ff00"
     },
     {
       "nombre": "Kiwi",
       "precio": 2,
       "imagen": "kiwi.png",
-      "color": "marron"
+      "color": "marron",
+      "color_code": "#54580f"
     },
     {
       "nombre": "Uva",
       "precio": 6,
       "imagen": "uva.png",
-      "color": "morado"
+      "color": "morado",
+      "color_code": "#c737bc"
     },
     {
       "nombre": "Sandía",
       "precio": 7,
       "imagen": "sandia.png",
-      "color": "rojo"
+      "color": "rojo",
+      "color_code": "#ff0000"
     },
     {
       "nombre": "Naranja",
       "precio": 3,
       "imagen": "naranja.png",
-      "color": "naranja"
+      "color": "naranja",
+      "color_code": "#ff9528"
     },
     {
       "nombre": "Piña",
       "precio": 3,
       "imagen": "pina.png",
-      "color": "amarillo"
+      "color": "amarillo",
+      "color_code": "#e5ff12"
     },
     {
       "nombre": "Platano",
       "precio": 2,
       "imagen": "platano.png",
-      "color": "amarillo"
+      "color": "amarillo",
+      "color_code": "#e5ff12"
     }
   ],
   "posts": [
