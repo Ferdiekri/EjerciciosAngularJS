@@ -31,6 +31,18 @@ angular.
                   'url': '#!/creditos',
                   'active': false
                 },
+                {
+                  'icono': 'fas fa-filter',
+                  'nombre': 'Filter, Map & Reduce',
+                  'url': '#!/filtros',
+                  'active': false
+                },
+                {
+                  'icono': 'fas fa-file-signature',
+                  'nombre': 'Contratos',
+                  'url': '#!/contratos',
+                  'active': false
+                }
               ];
             
               $scope.cambiarActivo = function( ruta ){
