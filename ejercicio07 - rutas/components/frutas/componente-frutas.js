@@ -14,6 +14,9 @@ angular.
             $scope.deshabilitadoDer = false;
             $scope.Math = window.Math;
             $scope.paginas = 0;
+            $scope.colores = [];
+            $scope.nombre2e = [];
+            $scope.totalEuros = 0;
 
 
             this.$onInit = function(){
@@ -24,9 +27,15 @@ angular.
         
                         console.trace('peticion GET %s data=%o', $scope.ENDPOINT, response);
                         $scope.frutas = response.data;
+
+                        $scope.colores = response.data.map(elem=>elem.color);
+                        $scope.nombre2e = response.data.filter(e => e.precio > 2).map(e=>e.nombre);
+                        $scope.totalEuros = response.data.map(elem=>elem.precio).reduce( (pv,cv) => pv+cv );
+
                         $scope.frutasPaginadas = $scope.frutas.slice($scope.orden, $scope.INTERVALO);
 
                         $scope.paginas = $scope.Math.ceil($scope.frutas.length/$scope.INTERVALO) ;
+                        
         
                     }, function(response){    // gestion del error
         
