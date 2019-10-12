@@ -61,6 +61,5 @@ angular.
             $scope.tarea5 ='Tarea sin completar';
             $scope.tarea5Long = $scope.tarea5.length;
             
-            
         } // MenuController
     });
