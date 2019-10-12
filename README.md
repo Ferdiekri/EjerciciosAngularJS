@@ -9,3 +9,7 @@ Para clonarlo en casa:
 ## EjerciciosAngularJS
  
 json-server --watch db.json
+
+## Comando para ejecutar el LiveServer en el terminal
+  - Colocarse en la carpeta del donde esté la BD
+  - Ejecutar el comando: json-server --watch db.json
