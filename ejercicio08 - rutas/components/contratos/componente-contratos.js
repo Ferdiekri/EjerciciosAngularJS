@@ -4194,7 +4194,8 @@ angular.
                       $scope.alerta = {
                         'texto': 'Las <strong>CATEGORÍAS</strong> han sido cargadas correctamente.',
                         'clase': 'info'
-                    }
+                      }
+                      ejercicios();
       
                   }, function(response){    // gestion del error
       
@@ -4212,8 +4213,7 @@ angular.
             Obtengan todos los contratos cuyo campo TIPPRODUCT
             tenga un valor determinado, por ejemplo “KT” (filter).
             */
-            $scope.tarea1 = $scope.contratos.filter( elem => elem.TIPPRODUCT =='KT' );
-            $scope.tarea1Long = $scope.tarea1.length;
+            $scope.tarea1 = $scope.contratos.filter( elem => elem.TIPPRODUCT ==  'KT' );
 
             /*
             Obtengan un nuevo array en el que cada elemento contenga
@@ -4223,27 +4223,69 @@ angular.
             $scope.tarea2 =$scope.contratos.map( elem => {
                                                             return {
                                                               "codigo": ((elem.codCONTRAT)?elem.codCONTRAT:0) + '-' + ((elem.digContrat)?elem.digContrat:0),
-                                                              "salario":  (    (   (elem.SALCONTRAT) ?elem.SALCONTRAT:0)    /100     )
+                                                              "salario":  ( ( (elem.SALCONTRAT) ? elem.SALCONTRAT:0) /100 )
                                                             }             
                                                           });
-            $scope.tarea2Long = $scope.tarea2.length;
 
             /*
             Obtengan todos los contratos que en su campo acciones
             contengan la clave “SITUACION” (filter por la subestructura)
             */
-            $scope.tarea3 = $scope.contratos.filter(elem => elem.ACCIONES);
-            $scope.tarea3 = $scope.tarea3.map(elem => elem.clave == 'SITUACION' );
-            $scope.tarea3Long = $scope.tarea3.length;
+            $scope.tarea3 = $scope.contratos.filter( v => {
+              if ( v.ACCIONES != undefined ){
+                let resul = v.ACCIONES.filter( e => e.clave == 'SITUACION' );
+                  return (resul.length === 1); // true si es verdadero.
+              }else{
+                return false
+              }            
+            });
 
             /*Obtengan un array que contenga todas las acciones posibles (map y spread)*/
-            $scope.tarea4 = $scope.contratos.map(elem => elem.ACCIONES)
-            $scope.tarea4 = $scope.tarea4.map(elem => elem.titulo);
-            $scope.tarea4Long = $scope.tarea4.length;
+            /*let resul = [];
+            $scope.tarea4 = $scope.contratos.map(elem => {
+              
+              if( elem.ACCIONES != undefined ){
+                //resul = [resul,...elem.ACCIONES.map( el => el.titulo )];
+
+                elem.ACCIONES.map( el => {
+                  resul = [...new Set(el.map(({titulo}) => titulo))].map(e => el.find(({titulo}) => titulo = e));
+                });
+                    
+              }
+              return resul;
+
+            }).filter( (v,i,a) => { 
+              return a.indexOf(v) === i
+            });
+
+            $scope.acciones = $scope.contratos.map( elem => elem.ACCIONES );
+            $scope.acciones = $scope.acciones.map( elem => {(elem != undefined)?elem.titulo});
+
+*/
+            var test = [
+              {id: 1, PlaceRef: "*00011", Component: "BATH", SubLocCode: "BAT", BarCode: ""},
+              {id: 2, PlaceRef: "*00022", Component: "BAXI10R", SubLocCode: "KIT", BarCode:""},
+              {id: 1, PlaceRef: "*00011", Component: "BATH", SubLocCode: "BAT", BarCode: ""},
+              {id: 3, PlaceRef: "*00011", Component: "ANR190", SubLocCode: "B1", BarCode: ""}
+            ]
+           
+            var uniq = [...new Set(test.map(({id}) => id))].map(e => test.find(({id}) => id == e));	
+
+
+            var uniq = [...new Set(test.map(({id}) => id))].map(e => test.find(({id}) => id == e));	
+            console.log(uniq) 
+
+
+
+
+
+
+
+            /*$scope.tarea4 = $scope.contratos.map(elem=>elem.ACCIONES).filter( (v,i,a) => { 
+              return a.indexOf(v) === i
+            });*/
                       
             /*Combinaciones de las anteriores, etc*/
-            $scope.tarea5 ='Tarea sin completar';
-            $scope.tarea5Long = $scope.tarea5.length;
-            
-        } // MenuController
+            $scope.tarea5 = $scope.contratos.map(elem => elem.TIPPRODUCT).filter( (v,i,a) => a.indexOf(v) === i );
+      }// ContratosController
     });

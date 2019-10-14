@@ -8,13 +8,13 @@
 
 
   <p>Para poder jugar con filter y map se se puede pedir que:</p>
-  <ol>
+  <!--<ol>
       <li>Obtengan todos los contratos cuyo campo TIPPRODUCT tenga un valor determinado, por ejemplo “KT” (filter)</li>
       <li>Obtengan un nuevo array en el que cada elemento contenga el código de contrato concatenado con el digito de control (campos codCONTRAT y digContrat), además del saldo en euros (campo SALCONTRAT dividido entre 100) (map)</li>
       <li>Obtengan todos los contratos que en su campo acciones contengan la clave “SITUACION” (filter por la subestructura)</li>
       <li>Obtengan un array que contenga todas las acciones posibles (map y spread)</li>
       <li>Combinaciones de las anteriores, etc</li>
-  </ol>	
+  </ol>-->	
 
   <p class="text-danger">En todo lo anterior no pueden usar bucles for ni foreach, por supuesto.</p>
 
@@ -35,7 +35,7 @@
           <div class="card-body">
               Instrucción: <code><pre>$scope.tarea1 = $scope.contratos.filter( elem => elem.TIPPRODUCT =='KT' );</pre></code><br>
               Resultado: {{ tarea1 }}<br>
-              Longitud: {{ tarea1Long }}
+              Longitud: {{ tarea1.length }}
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
                   }             
                 } );</pre></code><br>
               Resultado: {{ tarea2 }}<br>
-              Longitud: {{ tarea2Long }}
+              Longitud: {{ tarea2.length }}
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
           <div class="card-body">
               Instrucción: <code><pre></pre></code><br>
               Resultado: {{ tarea3 }}<br>
-              Longitud: {{ tarea3Long }}
+              Longitud: {{ tarea3.length }}<br>
 
               <p class=bg-success>ACCIONES = 70 && SITUACION = 42</p>
           </div>
@@ -96,7 +96,7 @@
             <div class="card-body">
                 Instrucción: <code><pre></pre></code><br>
                 Resultado: {{ tarea4 }}<br>
-                Longitud: {{ tarea4Long }}
+                Longitud: {{ tarea4.length }}
             </div>
           </div>
         </div>
