@@ -42,6 +42,12 @@ angular.
                   'nombre': 'Contratos',
                   'url': '#!/contratos',
                   'active': false
+                } ,
+                {
+                  'icono': 'fas fa-pray',
+                  'nombre': 'Promesas',
+                  'url': '#!/promesas',
+                  'active': false
                 }
               ];
             
