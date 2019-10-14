@@ -1,4 +1,4 @@
-app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', function($scope, $http, $q, $timeout){
+app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', function($scope, $http, $q, $timeout,){
 
 
     console.trace('promesasController');
@@ -6,7 +6,7 @@ app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', funct
     $scope.sumar1 = 0;
     $scope.resultado1 = 'Sumando...';
     $scope.resultado2 = 'Sumando...';
-    $scope.resultadoFinal = 0;
+    $scope.resultadoFinal = 'Esperando...';
 
     /**
      * Función asíncrona que retorna una promesa.
@@ -40,7 +40,6 @@ app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', funct
     $scope.p1
         .then(function(result){
             $scope.resultado1 = result;
-            $scope.resultadoFinal =  $scope.resultadoFinal + result;
             console.debug('Promesa2 cumplida. %o', result);
         })
         .catch(function(result){
@@ -52,13 +51,20 @@ app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', funct
     $scope.p2
         .then(function(result){
             $scope.resultado2 = result;
-            $scope.resultadoFinal =  $scope.resultadoFinal + result;
             console.debug('Promesa cumplida. %o', result);
         })
         .catch(function(result){
             $scope.resultado2 = result;
             console.debug('Promesa NO cumplida. %o', result)
         });
+
+    $q.all([$scope.p1,$scope.p2])
+    .then(function(result){
+        $scope.resultadoFinal = $scope.resultado1 + $scope.resultado2;
+    })
+    .catch(function(result){
+        $scope.resultado2 = result;
+    });
         
     // Vamos a esperar a las 2 promesas para que se cumplan las 2 y después sumar.
     
