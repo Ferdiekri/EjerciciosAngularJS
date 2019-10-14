@@ -13,7 +13,7 @@ app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', funct
      * Usamos $q para el asincronismo puesto que JS es síncrono.
      * 
      * @param numero1: entero a sumar
-     * @param numero2: entreo a sumar
+     * @param numero2: entero a sumar
      * @param fallo: boolean para hacer que funcione o falle la promesa.
      * @param espera: tiempo en milisegundospara que termine la función.
      */

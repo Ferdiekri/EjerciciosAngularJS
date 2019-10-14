@@ -1,4 +1,4 @@
-var app = angular.module('angularApp',['ngRoute', 'ngSanitize']);
+var app = angular.module('angularApp',['ngRoute', 'ngSanitize','angularApp.servicios']);
 
 app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
 
@@ -33,7 +33,7 @@ app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
 
     }; // onInit
 
-    
+
 
 
 
