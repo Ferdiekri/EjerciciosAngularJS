@@ -61,6 +61,12 @@ angular.
                   "active": false,
                   "icono": "fas fa-music"
                 },
+                {
+                  "nombre": "Formulario",
+                  "url": "#!/formulario",
+                  "active": false,
+                  "icono": "fas fa-file-alt"
+                },
               ];
             
               $scope.cambiarActivo = function( ruta ){

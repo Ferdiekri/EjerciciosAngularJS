@@ -40,6 +40,12 @@ app.controller('mainCtrl', ['$scope','$http', 'servicioConstantes',
 
   }//onInit
 
+  $scope.formData =  [];
+
+  $scope.guardarDatos = (  ) => {
+    console.warn('click guardarDatos()');
+  }
+
 }]);
 
 

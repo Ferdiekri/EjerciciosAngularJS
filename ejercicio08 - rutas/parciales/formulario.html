@@ -1,0 +1,42 @@
+<div class="container">
+
+    <h1>Formularios</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+        
+        <form name="formulario" ng-submit="guardarDatos()" novalidate>
+        
+            <div class="form-group (formulario.nombre.$valid && formulario.$pristine)?has-success:has-error" >
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form-control" aria-describedby="nombreInfo" required name="nombre"
+                        ng-model="formData.nombre">
+                <small id="nombreInfo" class="form-text text-muted">Este campo es obligatorio.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required name="email"
+                        ng-model="formData.email">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>            
+
+    </div>  <!-- /col-md-7 -->
+
+    <!-- Bloque de codigo -->
+    <div class="col-6 bg-info">
+        <label>Estructura de datos</label>
+        <pre><code>{{ formulario | json }}</code></pre>
+    </div> <!-- /col-md-5 -->
+
+    </div> <!-- /row -->
+
+
+
+</div> <!-- /container -->
+
+email es un email requerido
+nombre tiene que ir entre 2 y 50
