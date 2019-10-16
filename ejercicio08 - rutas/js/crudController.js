@@ -8,19 +8,12 @@ app.controller('crudController', ['$scope', 'cancionProvider',
     $scope.titulo = "Ejercicio CRUD contra Servicio Rest en Java";
     $scope.canciones = [];
     $scope.mensaje = null;
+    $scope.mostrar = false;
+    $scope.cancionEditar = [];
 
     // Eventos
     this.$onInit = function(){
         console.trace('crudController onInit'); 
-
-        /*
-        TODO ponerlo donde sea neceario
-        cancionProvider.listar();
-        cancionProvider.detalle(1);
-        cancionProvider.eliminar(2);
-        cancionProvider.crear("Mockito");
-        cancionProvider.modificar(1,"Cambiada Cancion 1");
-        */
 
        $scope.refrescar();
         
@@ -59,31 +52,60 @@ app.controller('crudController', ['$scope', 'cancionProvider',
                 console.debug('llamada correcta %o', response);
                 $scope.refrescar();
                 $scope.mensaje="Canción creada correctamente.";
-                $scope.titulo = "Introduce canción";
             },
             (response)=>{
                 console.warn('llamada INcorrecta %o', response);
+                $scope.mensaje="Nombre de la canción ya existe.";
             }
         );
     } // nuevaCancion()
 
-    $scope.eliminarCancion = ( id ) => {
+    $scope.eliminarCancion = ( canc ) => {
 
-        console.trace('click eliminarCancion id: %s', id);
+        console.trace('click eliminarCancion id: %s', canc.id);
 
-        let p = cancionProvider.eliminar( id );
+        if( confirm('Estás seguro de eliminar la canción ' + canc.id + ' - ' + canc.nombre + '?') ){
+
+            let p = cancionProvider.eliminar( canc.id );
+            p.then(
+                (response) => {
+                    console.debug('llamada correcta %o', response);
+                    $scope.refrescar();
+                    $scope.mensaje="Canción eliminada correctamente.";
+                },
+                (response) => {
+                    console.warn('llamada INcorrecta %o', response);
+                }
+            );
+
+        }
+
+       
+
+    } // eliminarCancion()
+
+    $scope.editarCancion = ( cancionId, nuevoNombre ) => {
+        console.trace('click editarCancion id: %s - nuevoNombre %s', cancionId, nuevoNombre);
+
+        let p = cancionProvider.modificar(cancionId,nuevoNombre);
         p.then(
             (response) => {
                 console.debug('llamada correcta %o', response);
                 $scope.refrescar();
-                $scope.mensaje="Canción eliminada correctamente.";
+                $scope.mensaje="Canción modificada correctamente.";
+                $scope.mostrar = false;
+                $scope.nuevoNombre = null;
             },
             (response) => {
                 console.warn('llamada INcorrecta %o', response);
             }
         );
 
-    } // eliminarCancion()
+    } // editarCancion()
+
+    $scope.cambiarEstado = function( canc ){
+        $scope.cancionEditar = canc;
+    }
     
 
 }]);

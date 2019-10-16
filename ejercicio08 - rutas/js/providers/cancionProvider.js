@@ -35,6 +35,8 @@ function CancionProvider($http){
     this.modificar = function( idCancion, nombreCancion ){    
       let url = ENDPOINT  + idCancion;
       console.log('cancionProvider modificar %s  id=%s nombre=%s', url, idCancion, nombreCancion );
+      let body = { "id": idCancion, "nombre": nombreCancion };
+      return $http.put(url, body);
       
     }// modificar
   
