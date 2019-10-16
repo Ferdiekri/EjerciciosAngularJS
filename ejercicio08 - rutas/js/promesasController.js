@@ -2,6 +2,7 @@ app.controller('promesasController', ['$scope', '$http', '$q', '$timeout', funct
 
 
     console.trace('promesasController');
+
     $scope.titulo = "Promesas - Ejercicio";
     $scope.sumar1 = 0;
     $scope.resultado1 = 'Sumando...';

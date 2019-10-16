@@ -1,46 +1,42 @@
-var app = angular.module('angularApp',['ngRoute', 'ngSanitize','angularApp.servicios']);
-
-app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
-
-    this.$onInit = function(){
-
-        console.log('mainCtrl onInit()');
-
-        $scope.alerta = {
-            'texto': '<strong>Lorem</strong> <hr> Ipsum',
-            'clase': 'info'
-        }
-
-        // Para saber si el servivio REST está levantado.
-        let url = 'http://localhost:3000';
-        $http.get(url)
-            .then(function (result) {
-                console.trace('Servicio REST funcionando. %o', result);
-                $scope.alerta = {
-                    'texto': '<strong>¡Perfecto!</strong> Servicio REST funcionando correctamentre.',
-                    'clase': 'info'
-                }
-            }).catch(function (response) {
-                console.trace('Servicio REST fallando. %o', response);
-                $scope.alerta = {
-                    'texto': '<strong>¡Atención!</strong> Servicio REST está parado.',
-                    'clase': 'danger'
-                }
-            
-            });
-        
+var app = angular.module('angularApp',['ngRoute', 'ngSanitize']);
 
 
-    }; // onInit
+app.constant("servicioConstantes", {
+    "titulo": "AngularApp",
+    "idioma": "es-Es",
+    "version": "1.0",
+    "autor": "Eder Ibáñez Rojo",
+    "github": "https://github.com/Ferdiekri/EjerciciosAngularJS"
+    } );
+
+/**
+*  Servicio o Provider
+*/
+
+app.service("cancionProvider", CancionProvider );
 
 
+/**
+* Ejemplo Servicio a traves de una Clase
+*/
 
+// Clase Rectangulo
+function Rectangulo() {
+this.ancho=0;
+this.alto=0;
 
+this.setAncho=function(ancho) {
+this.ancho=ancho;
+}
 
+this.setAlto=function(alto) {
+this.alto=alto;
+}  
 
+this.getArea=function() {
+return this.ancho * this.alto;
+}
+}
 
-
-
-
-
-}]);
+//definir Servicio
+app.service("rectanguloService",Rectangulo);

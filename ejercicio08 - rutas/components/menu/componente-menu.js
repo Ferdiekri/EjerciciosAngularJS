@@ -48,7 +48,19 @@ angular.
                   'nombre': 'Promesas',
                   'url': '#!/promesas',
                   'active': false
-                }
+                },
+                {
+                  "nombre": "Servicios",
+                  "url": "#!/servicios",
+                  "active": false,
+                  "icono": "fas fa-server"
+                },
+                {
+                  "nombre": "CRUD",
+                  "url": "#!/crud",
+                  "active": false,
+                  "icono": "fas fa-music"
+                },
               ];
             
               $scope.cambiarActivo = function( ruta ){

@@ -1,0 +1,54 @@
+<!-- componenteTabla -->
+
+
+
+
+    <div class="border p-2">
+        <h3><i class="fas fa-filter"></i>Filtro</h3> 
+        <input type="text" ng-model="busqueda.nombre" placeholder="Nombre fruta" class="form-control">
+        <select ng-model="busqueda.color" class="form-control">
+            <option value="">Seleciona Color</option>
+            <option ng-repeat="c in colores" value="{{c}}">{{c}}</option>        
+        </select>
+    </div>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Imagen</th>
+            <th scope="col" class="{{(campo=='nombre')?'selected':''}}" 
+               ng-click="campo = 'nombre'; orden = !orden;">
+                Nombre
+                <i class="fas fa-sort-up"></i>
+                <i class="fas fa-sort-down"></i>
+            </th>
+            <th scope="col" 
+                class="{{(campo=='color')?'selected':''}}" 
+                ng-click="campo = 'color'; orden = !orden">
+                Color
+                <i class="fas fa-sort-up"></i>
+                <i class="fas fa-sort-down"></i>
+            </th>
+            <th scope="col" 
+                class="{{(campo=='precio')?'selected':''}}" 
+                ng-click="campo = 'precio'; orden = !orden">
+                Precio
+                <i class="fas fa-sort-up"></i>
+                <i class="fas fa-sort-down"></i>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="fruta in frutas | filter:busqueda | orderBy:campo:orden ">
+            <th scope="row"><img ng-src="{{fruta.img}}" class="rounded-circle {{clase}}"></th>
+            <td>{{fruta.nombre}}</td>
+            <td>{{fruta.color}}</td>
+            <td>{{fruta.precio}}</td>
+          </tr>          
+        </tbody>
+        <tfoot>
+            <tr><td>TOTAL: {{totalEuros}}</td></tr>
+        </tfoot>
+      </table>
+
+<!-- /componenteTabla -->

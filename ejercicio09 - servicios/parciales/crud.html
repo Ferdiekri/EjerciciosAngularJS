@@ -1,0 +1,51 @@
+<div ng-controller="crudController" >
+
+     <h2>{{titulo}}</h2>
+
+     {{ canciones | json }}
+
+     <h3>TODO</h3>
+     <ol>
+         <li style="text-decoration: line-through">Pintar datos en Tabla</li>
+         <li style="text-decoration: line-through">Formulario para crear nuevas canciones</li>
+         <li style="text-decoration: line-through">Boton papelera para eliminar</li>
+         <li>Poder Modificar una cancion</li>
+         <li>Interesante para repaso Filtros y Ordenacion</li>
+     </ol>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th> 
+                    <th></th>          
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="cancion in canciones">
+                        <th scope="row">{{cancion.id}}</th>
+                        <td>{{cancion.nombre}}</td>
+                        <td><i class="fas fa-trash-alt fa-2x" ng-click="eliminarCancion(cancion.id)"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- /columna 1 -->
+
+        <div class="col">
+
+              <input type="text" ng-model="nombre" autofocus placeholder="Introduce nueva canción.">  
+              <button class="btn btn-primary" ng-click="nuevaCancion(nombre)"
+                    ng-disabled="nombre==null">Crear</button>
+              <br>
+              <p class="bg-info p-2 m-2">{{ (nombre==null)?"Longitud incorrecta.":mensaje }}</p>
+
+        </div> <!-- /columna 2 -->
+    </div>
+
+   
+          
+       
+
+</div>
