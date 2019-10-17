@@ -9,13 +9,26 @@ function PokemonProvider($http){
       return $http.get(ENDPOINT);
   
     }// listar
+
+    this.listarDetallado = function( ruta ){    
+      console.log('pokemonProvider listarDetallado ' + ruta);
+      return $http.get(ruta);
   
-    this.detalle = function( nombrePokemon ){    
-      let url = ENDPOINT + nombrePokemon;
+    }// listarDetallado
+
+    this.detalle = function( index ){    
+      let url = ENDPOINT + index;
       console.log('pokemonProvider detalle ' + url);
       return $http.get(url);
       
     }// detalle
+  
+    this.detalleNom = function( nombrePokemon ){    
+      let url = ENDPOINT + nombrePokemon;
+      console.log('pokemonProvider detalle ' + url);
+      return $http.get(url);
+      
+    }// detalleNom
   
   
   }

@@ -7,9 +7,14 @@ app.controller('pokemonController', ['$scope', 'pokemonProvider',
     // variables del scope del controlador
     $scope.titulo = "Listado de Pokémon";
     $scope.pokemon = [];
+    $scope.pokemonDetallado = [];
     $scope.poke = '';
 
-    let promesa = pokemonProvider.listar();           
+    // Eventos
+    this.$onInit = function(){
+        console.trace('pokemonController onInit'); 
+
+        let promesa = pokemonProvider.listar();           
         promesa.then( 
             response=>{
                 console.debug('Pokémon recuperados correctamente %o', response);
@@ -20,10 +25,20 @@ app.controller('pokemonController', ['$scope', 'pokemonProvider',
             }
         );
 
-    // Eventos
-    this.$onInit = function(){
-        console.trace('pokemonController onInit'); 
-
+        /*$scope.pokemon.forEach((poke)=>{
+            console.debug('Dentro del forEach()');
+            let indice = poke.url.split('pokemon/')[1];
+            let promesa2 = pokemonProvider.detalle(indice);
+            promesa2.then( 
+                response=>{
+                    console.debug('Pokémon recuperados correctamente %o', response);
+                    $scope.pokemonDetallado.push(response.data);
+                },
+                response=>{
+                    console.warn('No se han recuperado Pokémon. ERROR %o', response);
+                }
+            );
+        }; // forEach*/
               
 
     }; // init

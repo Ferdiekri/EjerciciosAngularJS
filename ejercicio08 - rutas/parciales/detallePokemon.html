@@ -1,15 +1,19 @@
-<h1>Página detalle</h1>
+<div ng-controller="pokemonDetalleController">
 
-Nombre: {{ nombre }}
+    <h1>{{ titulo }}{{ pokemon.name | uppercase}}</h1>
 
-<pre><code>{{poke}}</code></pre>
+    <div class="row">
+        <div class="col-6 bg-dark">
+            <img ng-src="{{ pokemon.sprites.front_default }}" width="300px" height="auto">
+        </div>
+        <div class="col-6 bg-info pt-5">
+            <p><strong>Número Pokédex:</strong> #{{ pokemon.id }}</p>
+            <p><strong>Nombre:</strong> {{ pokemon.name }}</p>
+            <p><strong>Tipos:</strong> <pre>{{ pokemon.types | json }}</pre></p>
+            <p><strong>Tipos:</strong> {{ tipos | json }}</p>
+            
 
-
-<div class="card" style="width: 18rem;">
-    <img src="./img/kiwi.png" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
     </div>
+
 </div>

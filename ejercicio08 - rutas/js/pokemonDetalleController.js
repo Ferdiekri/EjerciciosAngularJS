@@ -5,29 +5,28 @@ app.controller('pokemonDetalleController', ['$scope', 'pokemonProvider', '$route
     console.trace('pokemonDetalleController');
 
     // variables recibidas de routeParams
-    $scope.nombre = $routeParams.name;
+    $scope.id = $routeParams.id;
 
     // variables del scope del controlador
-    $scope.titulo = "Detalle de Pokémon";
-    $scope.poke = '';
-
-    let promesa = pokemonProvider.detalle($scope.nombre);
-        promesa.then( 
-            response=>{
-                console.debug('Pokémon recuperado correctamente %o', response);
-                $scope.poke = response.data;
-            },
-            response=>{
-                console.warn('No se ha recuperado el Pokémon. ERROR %o', response);
-            }
-        );
+    $scope.titulo = "Ficha Pokémon: ";
+    $scope.pokemon = [];
+    $scope.tipos = [];
 
     // Eventos
     this.$onInit = function(){
         console.trace('pokemonDetalleController onInit'); 
 
-              
-
+        let promesa = pokemonProvider.detalle($scope.id);
+        promesa.then( 
+            response=>{
+                console.debug('Pokémon recuperado correctamente %o', response);
+                $scope.pokemon = response.data;
+                //$scope.tipos = $scope.pokemon.map( elem => elem.types );
+            },
+            response=>{
+                console.warn('No se ha recuperado el Pokémon. ERROR %o', response);
+            }
+        );
     }; // init
 
 
