@@ -1,0 +1,23 @@
+<h1>Listado de Pokémon</h1>
+
+<!-- <pre><code>{{pokemon | json}}</code></pre> -->
+
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="poke in pokemon">
+            <td>X</td>
+            <td>{{ poke.name }}</td>
+            <td>
+                <i class="far fa-eye" ng-click="sacarDetalle(poke.name)"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>

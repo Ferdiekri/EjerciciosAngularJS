@@ -13,6 +13,7 @@ app.constant("servicioConstantes", {
 *  Servicio o Provider
 */
 
+app.service("pokemonProvider", PokemonProvider );
 app.service("cancionProvider", CancionProvider );
 
 

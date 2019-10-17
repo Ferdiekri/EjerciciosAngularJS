@@ -34,8 +34,29 @@ table th.selected{
 }
 
 
-/* Imagen modal */
+input:valid {
+  background-color: #3CBC8D;
+  color: white;
+}
+
+input:invalid {
+  background-color: #f44336;
+  color: white;
+}
+
+/*
+  RouteParams
+    .when('alumno/:id':{
+      templateUrl: 'parciales/detalle.html',
+      controller: 'detaleCtrl'
+    })
+
+    Inyectar routeParams en el controlador.
+
+      $scope.id = $routeParams.id;
 
 
 
-/* /Imagen Modal*/
+
+
+*/

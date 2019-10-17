@@ -8,20 +8,40 @@
         
         <form name="formulario" ng-submit="guardarDatos()" novalidate>
         
-            <div class="form-group (formulario.nombre.$valid && formulario.$pristine)?has-success:has-error" >
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" class="form-control" aria-describedby="nombreInfo" required name="nombre"
-                        ng-model="formData.nombre">
-                <small id="nombreInfo" class="form-text text-muted">Este campo es obligatorio.</small>
+            <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input  type="text"
+                        name="nombre"
+                        ng-model="formData.nombre"
+                        class="form-control {{ (formData.nombre.$valid)?'is-valid':'is-invalid' }}"
+                        ng-class="{
+                            'is-invalid': !formulario.nombre.$valid && !formulario.$pristine,
+                            'is-valid': formulario.nombre.$valid && !formulario.$pristine
+                        }"
+                        required
+                        minlength="2"
+                        maxlength="50">                        
+                <small class="form-text text-muted invalid-feedback">El nombre tiene que tener entre 2 y 50 caracteres.</small>
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" required name="email"
-                        ng-model="formData.email">
+                <label for="email">Email *</label>
+                <input  type="email"
+                        name="email"
+                        ng-model="formData.email"
+                        class="form-control {{ (formData.email.$valid)?'is-valid':'is-invalid' }}"
+                        ng-class="{
+                            'is-invalid': !formulario.email.$valid && !formulario.$pristine,
+                            'is-valid': formulario.email.$valid && !formulario.$pristine
+                        }"
+                        required>
+                <small class="form-text text-muted invalid-feedback">Formato de e-mail incorrecto</small>
+
             </div>
 
-            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="submit"
+                    ng-disabled="formulario.$invalid"
+                    class="btn btn-primary">Guardar</button>
         </form>            
 
     </div>  <!-- /col-md-7 -->
@@ -37,6 +57,3 @@
 
 
 </div> <!-- /container -->
-
-email es un email requerido
-nombre tiene que ir entre 2 y 50

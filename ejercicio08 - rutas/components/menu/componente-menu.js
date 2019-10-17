@@ -67,6 +67,12 @@ angular.
                   "active": false,
                   "icono": "fas fa-file-alt"
                 },
+                {
+                  "nombre": "Pokémon",
+                  "url": "#!/pokemon",
+                  "active": false,
+                  "icono": "fas fa-gamepad"
+                }
               ];
             
               $scope.cambiarActivo = function( ruta ){
