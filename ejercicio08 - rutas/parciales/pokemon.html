@@ -6,18 +6,27 @@
 <table class="table table-dark">
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">Pokédex</th>
+            <th scope="col">Sprite</th>
             <th scope="col">Nombre</th>
+            <th scope="col">Tipo(s)</th>
             <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
         <tr ng-repeat="poke in pokemon">
-            <td>X</td>
-            <td>{{ poke.name }}</td>
+            <td>###</td>
+            <td>###</td>
+            <td>{{ poke.name | uppercase }}</td>
+            <td>###</td>
             <td>
-                <i class="far fa-eye" ng-click="sacarDetalle(poke.name)"></i>
+                <a href="#!/detallePokemon/:{{poke.name}}">
+                    <i class="far fa-eye"></i> Ver detalle
+                </a>
             </td>
         </tr>
     </tbody>
 </table>
+
+
+Pokédex     Foto    Nombre  Tipo(s)

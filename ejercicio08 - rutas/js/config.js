@@ -39,13 +39,13 @@ app.config( function( $routeProvider ){
     .when('/formulario',{
       templateUrl: 'parciales/formulario.html'
     })
-    .when('/detallePokemon/:id',{
-      templateUrl: 'parciales/detallePokemon.html',
-      controller: 'pokemonController'     
-    })
     .when('/pokemon',{
       templateUrl: 'parciales/pokemon.html',
       controller: 'pokemonController'
+    })
+    .when('/detallePokemon/:nombre',{
+      templateUrl: 'parciales/detallePokemon.html',
+      controller: 'pokemonDetalleController'
     })
     .otherwise({
       redirectTo: '/'
