@@ -1,11 +1,11 @@
 app.controller('crudController', ['$scope', 'cancionProvider', 
-                                 function($scope, cancionProvider){
+                                 function($scope, cancionProvider ){
 
 
     console.trace('crudController');
 
     // variables del scope del controlador
-    $scope.titulo = "Ejercicio CRUD contra Servicio Rest en Java";
+    $scope.titulo = "ejercicio CRUD contra Servicio Rest en Java";
     $scope.canciones = [];
     $scope.mensaje = null;
     $scope.mostrar = false;

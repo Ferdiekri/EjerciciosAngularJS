@@ -41,3 +41,41 @@ return this.ancho * this.alto;
 
 //definir Servicio
 app.service("rectanguloService",Rectangulo);
+
+
+// Filtro personalizado para capitalizar la primera letra de un String
+
+app.filter("capitalizar", function () {
+    return function ( cadena ) {
+        if ( cadena != undefined && typeof cadena == 'string') {
+            return cadena.charAt(0).toUpperCase() + cadena.slice(1);
+        }else{
+            return "";
+        }
+    };
+  });
+
+// Filtro  que convierta "hoy es viernes a "hoy es VIErnes => {{| capitalizarCacho:7:10}}
+
+app.filter("capitalizarCacho", function () {
+    return function ( cadena, primer, ultimo ) {
+        var nuevaCadena = "";
+
+        if (cadena != undefined && typeof(cadena) == 'string' &&
+            angular.isNumber(primer) && primer >= 0 &&
+            angular.isNumber(ultimo) && ultimo > primer) {
+
+            for(var i=0;i<cadena.length;i++) {
+                if( (i >= primer && i<=ultimo)  ){
+                    nuevaCadena = nuevaCadena + cadena.charAt(i).toUpperCase();
+                }else{
+                    nuevaCadena = nuevaCadena + cadena.charAt(i);
+                }
+            }
+
+            return nuevaCadena;
+        }else{
+            return "";
+        }
+    };
+  });

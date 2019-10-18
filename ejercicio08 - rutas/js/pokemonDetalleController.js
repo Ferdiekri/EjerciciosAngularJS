@@ -9,6 +9,7 @@ app.controller('pokemonDetalleController', ['$scope', 'pokemonProvider', '$route
 
     // variables del scope del controlador
     $scope.titulo = "Ficha Pokémon: ";
+    $scope.fecha = "hoy es viernes.";
     $scope.pokemon = [];
     $scope.tipos = [];
 

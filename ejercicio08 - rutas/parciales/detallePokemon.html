@@ -1,17 +1,25 @@
 <div ng-controller="pokemonDetalleController">
 
-    <h1>{{ titulo }}{{ pokemon.name | uppercase}}</h1>
+    <h1>{{ titulo }}{{ pokemon.name | capitalizar }}</h1>
 
+    <h2>Fecha: {{ fecha | capitalizarCacho:7:10 }}</h2>
+    
+    <!--
+    <pre>{{pokemon |json}}</pre>
+    -->
     <div class="row">
         <div class="col-6 bg-dark">
             <img ng-src="{{ pokemon.sprites.front_default }}" width="300px" height="auto">
         </div>
         <div class="col-6 bg-info pt-5">
             <p><strong>Número Pokédex:</strong> #{{ pokemon.id }}</p>
-            <p><strong>Nombre:</strong> {{ pokemon.name }}</p>
-            <p><strong>Tipos:</strong> <pre>{{ pokemon.types | json }}</pre></p>
-            <p><strong>Tipos:</strong> {{ tipos | json }}</p>
+            <p><strong>Nombre:</strong> {{ pokemon.name | capitalizar }}</p>
             
+            <p><strong>Tipos:</strong>
+                <ul ng-repeat="tipos in pokemon.types">
+                    <li>{{ tipos.type.name | capitalizar }}</li>
+                </ul>
+            </p>
 
         </div>
     </div>

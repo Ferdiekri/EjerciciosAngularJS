@@ -6,59 +6,20 @@ app.controller('pokemonController', ['$scope', 'pokemonProvider',
 
     // variables del scope del controlador
     $scope.titulo = "Listado de Pokémon";
-    $scope.pokemon = [];
-    $scope.pokemonDetallado = [];
-    $scope.poke = '';
 
     // Eventos
-    this.$onInit = function(){
-        console.trace('pokemonController onInit'); 
+    /*this.$onInit = function(){
+        console.trace('pokemonController onInit');
 
-        let promesa = pokemonProvider.listar();           
-        promesa.then( 
-            response=>{
-                console.debug('Pokémon recuperados correctamente %o', response);
-                $scope.pokemon = response.data.results;
-            },
-            response=>{
-                console.warn('No se han recuperado Pokémon. ERROR %o', response);
-            }
-        );
+        console.trace("pedimos a la API todos los pokemos");
+        $scope.pokemon = {};
+        pokemonProvider.cazarPokemon().then( data => $scope.pokemon = data );             
 
-        /*$scope.pokemon.forEach((poke)=>{
-            console.debug('Dentro del forEach()');
-            let indice = poke.url.split('pokemon/')[1];
-            let promesa2 = pokemonProvider.detalle(indice);
-            promesa2.then( 
-                response=>{
-                    console.debug('Pokémon recuperados correctamente %o', response);
-                    $scope.pokemonDetallado.push(response.data);
-                },
-                response=>{
-                    console.warn('No se han recuperado Pokémon. ERROR %o', response);
-                }
-            );
-        }; // forEach*/
-              
+    }; // init*/
 
-    }; // init
-
-
-    // funciones
-    ///////////////////////////////////////////////////////////////////////////
-    $scope.sacarDetalle = (pokeName) => {
-        let promesa = pokemonProvider.detalle(pokeName);
-            promesa.then( 
-                response=>{
-                    console.debug('Pokémon recuperado correctamente %o', response);
-                    $scope.poke = response.data.results;
-                },
-                response=>{
-                    console.warn('No se ha recuperado el Pokémon. ERROR %o', response);
-                }
-            );
-
-    } 
+    console.trace("pedimos a la API todos los pokemos");
+    $scope.pokemons = {};
+    pokemonProvider.listarPokemon().then( data => $scope.pokemons = data );
     
 
 }]);
