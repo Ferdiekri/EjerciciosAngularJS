@@ -105,6 +105,4 @@ app.filter("capitalizarCacho", function () {
             ]};
     });
 
-
-
-    app.controller('geoController', ['$http', '$scope', function($http, $scope){}]);
+   // app.controller('geoController', ['$http', '$scope', function($http, $scope){}]);
