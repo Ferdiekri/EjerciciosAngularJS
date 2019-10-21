@@ -1,0 +1,46 @@
+<!-- componente-localizacion -->
+
+<h1>Geolocalización</h1>
+            <p>Localizamos la geolocalización del usuario mediante el plugin <a href="http://www.geoplugin.net" target="_blank">GeoPlugin</a>.</p>
+            <hr>
+            <p>Arriba</p>
+            <div ng-controller="geoController">
+
+                <button ng-click="localizar()"></button>
+
+                {{ $ctrl.localizacion }}
+
+                <div ng-show="mostrar" row>
+                    <div class="col-6">
+                        <ul>
+                            <li>IP: </li>
+                            <li>Ciudad: </li>
+                            <li>Región: </li>
+                            <li>Latitud: </li>
+                            <li>Longitud: </li>
+                            <li>Moneda: </li>
+                        </ul>
+                    </div> <!-- col-6 -->
+                    <div class="col-6">
+                        MAPA
+                    </div> <!-- col-6 -->
+
+                </div> <!-- row -->
+
+                            </div>
+                            <p>Abajo</p>
+                        </div> <!--  -->
+
+
+
+                <iframe width="100%" height="600"
+                    src="https://maps.google.com/maps?width=100%&height=600&hl=en&coord=43.0846,-2.1502&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+
+
+
+
+<!-- /componente-localizacion -->
+
+

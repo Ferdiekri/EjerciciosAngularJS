@@ -1,0 +1,17 @@
+<div class="container" ng-controller="httpController">
+            
+        <h1>$HTTP Request</h1>
+        <h4>Data dinámica</h4>
+        <p>Debemos inyectar la variable <code>$http</code> en el controlador.</p>
+        <p>Acordarse que las peticiones son con <u>Ajax</u> y <u>asíncrónas</u>. Mirar las trazas de consola.</p>
+        <p>Interesante usar las herraminetas de desarrollo de <b>Chrome</b> --> pestaña <b>NETWORKS (XHR)</b>.</p>
+        <hr>
+
+        <div class="alert alert-primary" role="alert" ng-hide="ocultar">
+            Cargando datos asíncronamente...
+        </div>
+
+        Profesores: {{ profesores }}
+
+
+    </div> <!-- fin del listadoCtrl -->

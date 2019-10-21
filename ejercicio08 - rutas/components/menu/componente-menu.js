@@ -72,7 +72,14 @@ angular.
                   "url": "#!/pokemon",
                   "active": false,
                   "icono": "fas fa-gamepad"
+                },
+                {
+                  "nombre": "Ejercicios Anteriores",
+                  "url": "#!/ejercicios",
+                  "active": false,
+                  "icono": "fas fa-tasks"
                 }
+
               ];
             
               $scope.cambiarActivo = function( ruta ){

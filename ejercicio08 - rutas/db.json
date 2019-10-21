@@ -1,4 +1,51 @@
 {
+  "tareas": [
+    {
+      "id": 3,
+      "completada": false,
+      "descripcion": "Poner bonitaaaaaaaaaaaaaaaa imagen de fondo con css"
+    },
+    {
+      "id": 4,
+      "completada": false,
+      "descripcion": "Poner focus al input despues de pulsar boton"
+    },
+    {
+      "completada": false,
+      "descripcion": "Mirar como no recargar la pagina",
+      "id": 10
+    },
+    {
+      "completada": true,
+      "descripcion": "icono para eliminar",
+      "id": 11
+    },
+    {
+      "completada": true,
+      "descripcion": "checkbutton al lado de la tarea para marcar si esta o no terminada",
+      "id": 12
+    },
+    {
+      "completada": true,
+      "descripcion": "filtrar tareas por nombre",
+      "id": 13
+    },
+    {
+      "completada": true,
+      "descripcion": "Confirmar la eliminación.",
+      "id": 14
+    },
+    {
+      "completada": true,
+      "descripcion": "Cancelar la edición de la tarea.",
+      "id": 15
+    },
+    {
+      "completada": false,
+      "descripcion": "Poner todo bonito.",
+      "id": 18
+    }
+  ],
   "frutas": [
     {
       "nombre": "Manzana",
@@ -133,9 +180,18 @@
       "formContrato": "931002151-5",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -209,9 +265,18 @@
       "formContrato": "391002823-6",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -249,9 +314,18 @@
       "formContrato": "391040690-6",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -289,9 +363,18 @@
       "formContrato": "391040691-0",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -329,9 +412,18 @@
       "formContrato": "391040692-5",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -369,9 +461,18 @@
       "formContrato": "392002919-2",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 391040692,
       "VISIBLEDESAGRD": 0,
@@ -409,9 +510,18 @@
       "formContrato": "392002921-3",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Órdenes", "clave": "ORDENES" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Órdenes",
+          "clave": "ORDENES"
+        }
       ],
       "CODCONTMAT": 391040692,
       "VISIBLEDESAGRD": 0,
@@ -485,12 +595,30 @@
       "formContrato": "604477000008888-3",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Trabas", "clave": "TRABAS" },
-        { "titulo": "Condiciones de liquidación", "clave": "CONDICIONES_DE_LIQUIDACION" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" },
-        { "titulo": "Familia", "clave": "FAMILIA" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Trabas",
+          "clave": "TRABAS"
+        },
+        {
+          "titulo": "Condiciones de liquidación",
+          "clave": "CONDICIONES_DE_LIQUIDACION"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        },
+        {
+          "titulo": "Familia",
+          "clave": "FAMILIA"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -617,7 +745,12 @@
       "idColumn": "13641",
       "formContrato": "1364-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 20
@@ -707,7 +840,12 @@
       "idColumn": "1730786091",
       "formContrato": "173078609-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 170084850,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -923,7 +1061,12 @@
       "idColumn": "6780005701",
       "formContrato": "678000570-2",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 1210
@@ -1122,10 +1265,22 @@
       "formContrato": "461009173-4",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Movimientos", "clave": "MOVIMIENTOS" },
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" },
-        { "titulo": "Comisiones y gastos", "clave": "COMISIONES_Y_GASTOS" }
+        {
+          "titulo": "Movimientos",
+          "clave": "MOVIMIENTOS"
+        },
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        },
+        {
+          "titulo": "Comisiones y gastos",
+          "clave": "COMISIONES_Y_GASTOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1361,11 +1516,26 @@
       "formContrato": "730438311-9",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" },
-        { "titulo": "Condiciones de liquidación", "clave": "CONDICIONES_DE_LIQUIDACION" },
-        { "titulo": "Comisiones y gastos", "clave": "COMISIONES_Y_GASTOS" },
-        { "titulo": "Familia", "clave": "FAMILIA" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        },
+        {
+          "titulo": "Condiciones de liquidación",
+          "clave": "CONDICIONES_DE_LIQUIDACION"
+        },
+        {
+          "titulo": "Comisiones y gastos",
+          "clave": "COMISIONES_Y_GASTOS"
+        },
+        {
+          "titulo": "Familia",
+          "clave": "FAMILIA"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1474,7 +1644,12 @@
       "idColumn": "104001",
       "formContrato": "10400-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 1370
@@ -1547,9 +1722,18 @@
       "formContrato": "140000184-4",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1587,9 +1771,18 @@
       "formContrato": "140000280-1",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1627,9 +1820,18 @@
       "formContrato": "140000325-2",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1667,9 +1869,18 @@
       "formContrato": "140000324-8",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1707,9 +1918,18 @@
       "formContrato": "140000657-4",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1747,9 +1967,18 @@
       "formContrato": "140000182-5",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1787,9 +2016,18 @@
       "formContrato": "140010239-5",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1827,9 +2065,18 @@
       "formContrato": "140010314-1",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1867,9 +2114,18 @@
       "formContrato": "140010437-3",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1907,9 +2163,18 @@
       "formContrato": "140010438-8",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1947,9 +2212,18 @@
       "formContrato": "140010399-2",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -1987,9 +2261,18 @@
       "formContrato": "140010714-6",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -2027,9 +2310,18 @@
       "formContrato": "140000667-1",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -2067,9 +2359,18 @@
       "formContrato": "140010383-8",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Deudores", "clave": "DEUDORES_FA" },
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Deudores",
+          "clave": "DEUDORES_FA"
+        },
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -2124,7 +2425,12 @@
       "idColumn": "1410008061",
       "formContrato": "141000806-3",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2160,7 +2466,12 @@
       "idColumn": "1410020321",
       "formContrato": "141002032-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2196,7 +2507,12 @@
       "idColumn": "1410032571",
       "formContrato": "141003257-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2232,7 +2548,12 @@
       "idColumn": "1410041501",
       "formContrato": "141004150-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2268,7 +2589,12 @@
       "idColumn": "1410051331",
       "formContrato": "141005133-5",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2304,7 +2630,12 @@
       "idColumn": "1410108891",
       "formContrato": "141010889-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2340,7 +2671,12 @@
       "idColumn": "1410117351",
       "formContrato": "141011735-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2376,7 +2712,12 @@
       "idColumn": "1410138311",
       "formContrato": "141013831-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2412,7 +2753,12 @@
       "idColumn": "1410139711",
       "formContrato": "141013971-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2448,7 +2794,12 @@
       "idColumn": "1410139721",
       "formContrato": "141013972-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2484,7 +2835,12 @@
       "idColumn": "1410141321",
       "formContrato": "141014132-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2520,7 +2876,12 @@
       "idColumn": "1410171351",
       "formContrato": "141017135-9",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2556,7 +2917,12 @@
       "idColumn": "1410192351",
       "formContrato": "141019235-6",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -2592,7 +2958,12 @@
       "idColumn": "1410133521",
       "formContrato": "141013352-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 20
@@ -2665,9 +3036,18 @@
       "formContrato": "180001029-7",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" },
-        { "titulo": "Condiciones de liquidación", "clave": "CONDICIONES_DE_LIQUIDACION" },
-        { "titulo": "Comisiones y gastos", "clave": "COMISIONES_Y_GASTOS" }
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        },
+        {
+          "titulo": "Condiciones de liquidación",
+          "clave": "CONDICIONES_DE_LIQUIDACION"
+        },
+        {
+          "titulo": "Comisiones y gastos",
+          "clave": "COMISIONES_Y_GASTOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -2705,9 +3085,18 @@
       "formContrato": "180001451-7",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" },
-        { "titulo": "Condiciones de liquidación", "clave": "CONDICIONES_DE_LIQUIDACION" },
-        { "titulo": "Comisiones y gastos", "clave": "COMISIONES_Y_GASTOS" }
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        },
+        {
+          "titulo": "Condiciones de liquidación",
+          "clave": "CONDICIONES_DE_LIQUIDACION"
+        },
+        {
+          "titulo": "Comisiones y gastos",
+          "clave": "COMISIONES_Y_GASTOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -2745,9 +3134,18 @@
       "formContrato": "180011068-2",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Datos básicos", "clave": "DATOS_BASICOS" },
-        { "titulo": "Condiciones de liquidación", "clave": "CONDICIONES_DE_LIQUIDACION" },
-        { "titulo": "Comisiones y gastos", "clave": "COMISIONES_Y_GASTOS" }
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        },
+        {
+          "titulo": "Condiciones de liquidación",
+          "clave": "CONDICIONES_DE_LIQUIDACION"
+        },
+        {
+          "titulo": "Comisiones y gastos",
+          "clave": "COMISIONES_Y_GASTOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -2839,9 +3237,18 @@
       "formContrato": "169000239-1",
       "ordenAgrupacion": 0,
       "ACCIONES": [
-        { "titulo": "Situación", "clave": "SITUACION" },
-        { "titulo": "Condiciones de liquidación", "clave": "CONDICIONES_DE_LIQUIDACION" },
-        { "titulo": "Comisiones y gastos", "clave": "COMISIONES_Y_GASTOS" }
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        },
+        {
+          "titulo": "Condiciones de liquidación",
+          "clave": "CONDICIONES_DE_LIQUIDACION"
+        },
+        {
+          "titulo": "Comisiones y gastos",
+          "clave": "COMISIONES_Y_GASTOS"
+        }
       ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
@@ -3724,7 +4131,12 @@
       "idColumn": "5600001231",
       "formContrato": "560000123-4",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Situación", "clave": "SITUACION" }],
+      "ACCIONES": [
+        {
+          "titulo": "Situación",
+          "clave": "SITUACION"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 1220
@@ -3958,7 +4370,12 @@
       "idColumn": "6518004021",
       "formContrato": "651800402-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 20
@@ -4048,7 +4465,12 @@
       "idColumn": "3800760182",
       "formContrato": "380076018-8",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -4084,7 +4506,12 @@
       "idColumn": "3800751392",
       "formContrato": "380075139-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 10
@@ -4174,7 +4601,12 @@
       "idColumn": "6761002231",
       "formContrato": "676100223-1",
       "ordenAgrupacion": 0,
-      "ACCIONES": [{ "titulo": "Datos básicos", "clave": "DATOS_BASICOS" }],
+      "ACCIONES": [
+        {
+          "titulo": "Datos básicos",
+          "clave": "DATOS_BASICOS"
+        }
+      ],
       "CODCONTMAT": 0,
       "VISIBLEDESAGRD": 0,
       "ORDENVINC": 0

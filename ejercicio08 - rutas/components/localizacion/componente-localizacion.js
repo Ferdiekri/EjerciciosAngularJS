@@ -16,7 +16,7 @@ angular.
 
             //http://www.geoplugin.net/json.gp?jsoncallback=JSON_CALLBACK
             $http.jsonp('http://www.geoplugin.net/json.gp?jsoncallback=JSON_CALLBACK')
-                .success(function(data){
+                .then(function(data){
                     $scope.localizacion = data;
                 });
             

@@ -1,0 +1,80 @@
+
+    <h1>Ejercicio 02</h1>
+    <h2>Ejercicio Controlador Profesor</h2>
+    <hr>
+    <div ng-controller="profesorController as pc">
+
+        {{ profesor | json }}
+            
+        <h2>Profesor</h2>
+        <h4>{{ profesor.nombre }}</h4>
+        <hr>
+        <div class="row">
+
+            <!-- Div que contiene la imagen del profesor -->
+            <div class="col-sm-3">
+                <section class="panel">
+                    <div class="panel-body" align="center">
+                        <img ng-src="{{ profesor.foto }}" class="img-circle" alt="" width="150px" height="150px">
+                    </div>
+                </section>
+            </div>
+        
+            <!-- Div, donde se mostrará la bio del profesor -->
+            <div class="col-sm-9">
+                <section class="panel">
+                    <div class="panel-body">
+                        {{ profesor.bio }}
+                        <br>
+                        <br>
+                        <strong>Edad:</strong> {{ profesor.edad }} años  
+                    </div>
+                </section>
+            </div>
+            <br>
+            <button class="btn btn-info" ng-click="editar()">Editar</button> 
+            <br>     
+        </div> <!-- class.row -->
+
+        <div class="row {{ animacion }}"  ng-show="esVisible">
+            Nombre: <br>
+            <input type="text" class="form-control" ng-model="editando.nombre">
+            Bio: <br>
+            <input type="text" class="form-control" ng-model="profesor.bio">
+            Edad: <br>
+            <input type="number" class="form-control" ng-model="profesor.edad">
+            <br>
+            <button class="btn btn-danger" ng-click="cancelar()">Cancelar</button> 
+            <br>
+            <button class="btn btn-success" ng-click="guardar()">Guardar</button> 
+            <br>      
+
+        </div>
+    
+    </div> <!-- profesorController -->
+
+    <hr>
+
+    <div ng-controller="videoController as vc">
+            <h2>{{video.nombre}}</h2>
+            <p class="btn-like {{ latir }}" ng-click="darLike()"><i class="far fa-heart"></i> {{ video.likes }} Likes</p>
+            <iframe width="560" height="315" ng-src="{{url}}"></iframe>
+    </div> <!-- videoController -->
+
+    <hr>
+
+    <div ng-controller="frutasController">
+        <h2>Ejemplo directiva ng-repeat</h2>
+        <h3>Listado simple</h3>
+        <ul class="list-group">
+            <li class="{{ (frutaSeleccionada == f) ? 'list-group-item active' : 'list-group-item' }}"                
+            ng-click="seleccionado(f)" 
+            ng-repeat="f in frutas">{{f}}</li> 
+            <!--<li class="list-group-item {{seleccionada}}" ng-repeat="f in frutas" ng-click="setSelected($index)">{{ f }}</li>-->
+        </ul>
+        <br>
+        <h3>Listado con más de un campo</h3>
+        <ul class="list-group">
+            <li class="list-group-item {{seleccionada}}" ng-repeat="fj in frutasJson.frutas">{{ fj.nombre }} es {{ fj.color }}</li>
+        </ul> 
+    </div> <!-- videoController -->
