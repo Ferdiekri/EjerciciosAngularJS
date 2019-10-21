@@ -43,20 +43,3 @@ input:invalid {
   background-color: #f44336;
   color: white;
 }
-
-/*
-  RouteParams
-    .when('alumno/:id':{
-      templateUrl: 'parciales/detalle.html',
-      controller: 'detaleCtrl'
-    })
-
-    Inyectar routeParams en el controlador.
-
-      $scope.id = $routeParams.id;
-
-
-
-
-
-*/

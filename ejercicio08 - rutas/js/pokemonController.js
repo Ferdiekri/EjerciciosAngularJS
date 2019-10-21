@@ -6,6 +6,9 @@ app.controller('pokemonController', ['$scope', 'pokemonProvider',
 
     // variables del scope del controlador
     $scope.titulo = "Listado de Pokémon";
+    $scope.columna = 'id';
+    $scope.orden = false;
+    
 
     // Eventos
     /*this.$onInit = function(){
@@ -20,6 +23,17 @@ app.controller('pokemonController', ['$scope', 'pokemonProvider',
     console.trace("pedimos a la API todos los pokemos");
     $scope.pokemons = {};
     pokemonProvider.listarPokemon().then( data => $scope.pokemons = data );
+
+
+    $scope.ordenar = function(campo, ordenar){
+        console.trace('ordenar()');
+
+        $scope.columna = campo;
+        $scope.orden = ordenar;
+        console.log( "$scope.columna = ", $scope.columna );
+        console.log( "$scope.orden = ", $scope.orden );
+ 
+     } // ordenar()
     
 
 }]);
